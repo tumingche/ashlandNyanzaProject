@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maxium-scale=1.0, user-scalable=no" />
+    <title> Ashland-Nyanza Project: Data Visualization </title> 
+    <link type="text/css" rel="stylesheet" id="style-css" media="all" href="css/style.css" />
+    <style type="text/css"></style>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+</head> 
+
+
+<body>    
+    <!-- //////////////////////PANEL-IMAGE/////////////////// -->
+    <div id="panel_img">     
+        <img id="myImg_bot" src="img/timeline/1.jpg" /> 
+        <img id="myImg_top" src="img/timeline/2.jpg" />
+
+        <img id="img_cc_2014_1" src="img/2014/14_1.png" title="Trichloroethylene" />
+        <img id="img_cc_2014_2" src="img/2014/14_2.png" title="Dichlorobenzene" />
+        <img id="img_cc_2014_3" src="img/2014/14_3.png" title="Dichloroethene" />
+
+        <img id="img_cc_2009_1" src="img/2009/09_1.png" title="Trichloroethylene (green)" />
+        <img id="img_cc_2009_2" src="img/2009/09_2.png" title="Trichloroethylene (red)" />
+        <img id="img_cc_2009_3" src="img/2009/09_3.png" title="Trichloroethylene (Isopleth)" />
+        <img id="img_cc_2009_4" src="img/2009/09_4.png" title="Tetrachloroethane" />
+        <img id="img_cc_2009_5" src="img/2009/09_5.png" title="Exceeding groundwater (brown)" />
+        <img id="img_cc_2009_6" src="img/2009/09_6.png" title="Exceeding groundwater (purple)" />
+
+        <img id="img_cc_2004_1" src="img/2004/04_1.png" title="Plume area" />
+
+        <img id="img_cc_1993_1" src="img/1993/93_1.png" title="Trichloroethylene" />
+        <img id="img_cc_1993_2" src="img/1993/93_2.png" title="Dichlorobenzene" />
+        <img id="img_cc_1993_3" src="img/1993/93_3.png" title="Dichlorobenzene" />
+        <img id="img_cc_1993_4" src="img/1993/93_4.png" title="Nitrobenzene" />
+        <img id="img_cc_1993_5" src="img/1993/93_5.png" title="Aniline" />
+        <img id="img_cc_1993_6" src="img/1993/93_6.png" title="Plume area (groundwater boundary)" />
+
+        <img id="img_contour" src="img/view/contour.png" />
+        <img id="img_landmark" src="img/view/landmark.png" />
+        <img id="img_well" src="img/view/well.png" />        
+    </div>
+    <div id="img_scale">
+        <!-- <img src="img/scale.png" /> --> 
+    </div>
+    <!-- //////////////////////(END)PANEL-IMAGE////////////// --> 
+
+
+
+
+    <!-- //////////////////////PANEL-CHEMICAL//////////////// -->
+    <div id="panel_chemical">      
+        <!-- ////MAP BTN X 3//// -->
+        <ul id="views">
+            <li id="btn_contour"><h4> Contour Map </h4><img src="img/btn/btn_contour.png" /></li>
+            <li id="btn_landmark"><h4> Landmarks </h4><img src="img/btn/btn_landmark.png" /></li>
+            <li id="btn_well"><h4> Well Map </h4><img src="img/btn/btn_well.png" /></li>
+        </ul>
+
+        <!-- ////REPORTS X 5//// -->    
+        <ul id="epa_report_2014">
+            <h3> The Fifth EPA Five-Year Report </h3>
+            <li id="btn_cc_2014_1" title="Trichloroethylene"><h4> TCE </h4></li>
+            <li id="btn_cc_2014_2" title="Dichlorobenzene"><h4> DCB </h4></li>
+            <li id="btn_cc_2014_3" title="Dichloroethene"><h4> DCE </h4></li>
+        </ul>
+        <ul id="epa_report_2009">
+            <h3> The Fourth EPA Five-Year Report </h3>
+            <li id="btn_cc_2009_1" title="Trichloroethylene (green)"><h4> TCE g </h4></li>
+            <li id="btn_cc_2009_2" title="Trichloroethylene (red)"><h4> TCE r </h4></li>
+            <li id="btn_cc_2009_3" title="Trichloroethylene (isopleth)"><h4> TCE i </h4></li>
+            <li id="btn_cc_2009_4" title="Tetrachloroethane"><h4> TeCA </h4></li>
+            <li id="btn_cc_2009_5" title="Exceeding groundwater (brown)"><h4> GW b </h4></li>
+            <li id="btn_cc_2009_6" title="Exceeding groundwater (purple)"><h4> GW p </h4></li>
+        </ul>
+        <ul id="epa_report_2004">
+            <h3> The Thrid EPA Five-Year Report </h3>
+            <li id="btn_cc_2004_1" title="Plume area"><h4> Plume </h4></li>
+        </ul>
+        <ul id="epa_report_1999">
+            <h3> The Second EPA Five-Year Report </h3>
+        </ul>
+        <ul id="epa_report_1993">
+            <h3> The First EPA Five-Year Report </h3>
+            <li id="btn_cc_1993_1" title="Trichloroethylene"><h4> TCE </h4></li>
+            <li id="btn_cc_1993_2" title="Dichlorobenzene"><h4> DCB1 </h4></li>
+            <li id="btn_cc_1993_3" title="Dichlorobenzene"><h4> DCB2 </h4></li>
+            <li id="btn_cc_1993_4" title="Nitrobenzene"><h4> NTB </h4></li>
+            <li id="btn_cc_1993_5" title="Aniline"><h4> Aniline </h4></li>
+            <li id="btn_cc_1993_6" title="Plume area (groundwater boundary)"><h4> Plume </h4></li>
+        </ul>
+
+
+        <!-- ////CC INTRO X 5//// -->
+        
+        <div id="accordian">
+            <!--
+            <ul>
+                <li>
+                    <div id="cc_1_name">
+                        <h1> TCE (Trichloroethylene) </h1>
+                    </div>
+                    <ul>
+                        <li><h1> Trichloroethylene </h1></li>
+                    </ul>
+                </li>
+                <li>
+                    <div id="cc_2_name">
+                        <h1> DCB (Dichlorobenzene) </h1>
+                    </div>
+                    <ul>
+                        <li><h1> Dichlorobenzene </h1></li>
+                    </ul>
+                </li>
+                <li>
+                    <div id="cc_3_name">
+                        <h1> DCE (Dichloroethene) </h1>
+                    </div>
+                    <ul>
+                        <li><h1> Dichloroethenen </h1></li>
+                    </ul>
+                </li>
+                <li>
+                    <div id="cc_4_name">
+                        <h1> TeCA (Tetrachloroethane) </h1>
+                    </div>
+                    <ul>
+                        <li><h1> Tetrachloroethane </h1></li>
+                    </ul>
+                </li>
+                <li>
+                    <div id="cc_5_name">
+                        <h1> NTB (Nitrobenzene) </h1>
+                    </div>
+                    <ul>
+                        <li><h1> Nitrobenzene </h1></li>
+                    </ul>
+                </li>
+                <li>
+                    <div id="cc_6_name">
+                        <h1> Aniline </h1>
+                    </div>
+                    <ul>
+                        <li><h1> Aniline </h1></li>
+                    </ul>
+                </li>
+            </ul>
+            -->
+        </div>
+    </div>
+    <!-- //////////////////////(END)PANEL-CHEMICAL/////////// -->
+
+
+
+
+    <!-- //////////////////////PANEL-TIMELINE//////////////// -->
+    <div id="bg_right">
+        <img src="img/bg_right.png" /> 
+    </div>
+    <div id="panel_timeline">
+        <div id="timeline_text">
+            <h4> Aerial Map </h4>
+            <div id="timeline_text_year">
+                <h2 style="margin-top:0px;"> 2014 </h2>
+                <h2 style="margin-top:20px;"> 2009 </h2>
+                <h2 style="margin-top:20px;"> 2004 </h2>
+                <h2 style="margin-top:21px;"> 1999 </h2>
+                <h2 style="margin-top:27px;"> 1993 </h2>
+                <h2 style="margin-top:60px;"> 1982 </h2>
+                <h2 style="margin-top:14px;"> 1978 </h2>
+                <h2 style="margin-top:42px;"> 1970 </h2>
+                <h2 style="margin-top:302px;"> 1930 </h2>
+                <h2 style="margin-top:165px;"> 1917 </h2>
+            </div>
+            <div id="timeline_text_description">
+                <h1 style="margin-top:0px;"> 
+                    The site was 
+                    listed on the 
+                    Superfund 
+                    National Priority 
+                    List
+                </h1>
+                <h1 style="margin-top:32px;">
+                    Nyanza closed 
+                    down due to 
+                    financial problems
+                </h1>
+                <h1 style="margin-top:2px;">
+                    Initial discovery 
+                    contamination 
+                    of Sudbury River
+                </h1>
+                <h1 style="margin-top:276px;">
+                    Nyanza Color & 
+                    Chemical Co. 
+                    merged with US 
+                    Color & Chemical 
+                    Co., expanding 
+                    its dyestuff and 
+                    textile chemical 
+                    business on the 
+                    site
+                </h1>
+                <h1 style="margin-top:22px;">
+                    US Color & 
+                    Chemical Co. 
+                    established labs
+                    and factories
+                    on the site
+                </h1>
+            </div>      
+        </div>
+        <div id="timeline_scrollBar">
+            <input type="range" name="points" id="myRange" value="4.0" min="1.0" max="7.99" step="0.01" data-show-value="true" data-popup-enabled="true" data-hightlight="true">
+        </div>
+    </div>
+    <!-- //////////////////////(END)PANEL-TIMELINE/////////// -->
+    
+
+   
+    <script type="text/javascript" src="js/anp_jpg.js"></script>
+
+
+
+    </body>
+</html>

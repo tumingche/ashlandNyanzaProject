@@ -1,0 +1,890 @@
+body {
+    /*background: #000000 url("../index/ui_px_4.png") no-repeat left top;*/
+    background: #808080;
+    /*background-size: 1920px 1080px;*/
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: "HelveticaNeue","Helvetica-Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    overflow: hidden;
+    /*cursor: none;*/     
+}
+
+h1, h2, h3, h4 {
+    font-family: "HelveticaNeue","Helvetica-Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: normal;    /* bold; */
+    font-style: normal;
+    font-variant: normal;   /* small-caps; */
+    text-transform: none;   /* uppercase; */
+    text-align: center;       /* left; */
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    display: block;
+    opacity: 0.6;
+    transition: opacity 0.3s ease-in-out 0s;
+    -moz-transition: opacity 0.3s ease-in-out 0s;
+    -webkit-transition: opacity 0.3s ease-in-out 0s;
+}
+/*tiemline description, cc intro*/
+h1 {
+    font-size: 13px;
+    color: #000000;
+    opacity: 1.0;
+}
+/*timeline year*/
+h2 {
+    font-size: 14px;
+    font-style: italic; 
+    color: #000000;
+    opacity: 1.0;
+}
+/*epa reports title*/
+h3 {
+    font-size: 14px;
+    font-weight: bold; 
+    color: #000000;
+    opacity: 1.0;
+}
+/*all btns*/
+h4 {
+    font-size: 14px;
+    color: #000000;
+    opacity: 0.6;
+}
+
+
+/* /////////////////////////// */
+/* ////////PANEL-IMAGE//////// */
+/* /////////////////////////// */
+#panel_img
+{
+    /*background: rgba(226, 237, 239, 1.0);*/
+    /*background: rgba(142, 142, 147, 1.0);*/  
+    background: rgba(0, 0, 0, 1.0);
+    /*width: 1440px;
+    height: 1080px;*/
+    width: auto;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 0px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+
+#myImg_bot, #myImg_top {
+    /*width: 1920px;
+    height: 1080px;*/
+    width: auto;
+    height: 100%;
+    position: absolute; 
+    z-index: 10;
+    top: 0px;
+    left: 0px; 
+}
+#myImg_bot {
+    opacity: 1;
+}
+#myImg_top {
+    opacity: 0;
+}
+
+#img_cc_2014_1, #img_cc_2014_2, #img_cc_2014_3, 
+#img_cc_2009_1, #img_cc_2009_2, #img_cc_2009_3, 
+#img_cc_2009_4, #img_cc_2009_5, #img_cc_2009_6, 
+#img_cc_2004_1, 
+#img_cc_1993_1, #img_cc_1993_2, #img_cc_1993_3,
+#img_cc_1993_4, #img_cc_1993_5, #img_cc_1993_6
+{
+    /*width: 1440px;
+    height: 1080px;*/
+    width: auto;
+    height: 100%;
+    position: absolute; 
+    z-index: 20;
+    top: 0px;
+    left: 0px; 
+    opacity: 1.0;
+}
+
+#img_contour, #img_landmark, #img_well
+{
+    /*width: 1440px;
+    height: 1080px;*/
+    width: auto;
+    height: 100%;
+    position: absolute; 
+    z-index: 20;
+    top: 0px;
+    left: 0px; 
+    opacity: 1.0;
+}
+
+#img_scale {
+    background: none;
+    width: 400px;
+    height: 40px;
+    position: absolute;
+    z-index: 100;
+    top: 1028px;
+    left: 40px;
+}
+#img_scale img {
+    width: 400px;
+    height: 40px;
+    opacity: 0.8;
+}
+
+
+
+
+/* /////////////////////////////// */
+/* ////////PANEL-CHEMICAL///////// */
+/* /////////////////////////////// */
+#panel_chemical
+{
+    background: rgba(0, 255, 0, 0.0);
+    width: 294px;
+    height: 1080px;
+    position: absolute;
+    z-index: 20;
+    top: -164px;
+    right: 79px;   /*206px;*/
+    /*left: 1440px;*/
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+transform-origin: 0;
+-ms-transform-origin: 0;
+-moz-transform-origin: 0;
+-webkit-transform-origin: 0;
+transform: scale(0.7);
+ms-transform: scale(0.7);
+-moz-transform: scale(0.7);
+-webkit-transform: scale(0.7);
+}
+
+/* ////////VIEWS BTN////////*/
+#views {
+    background: rgba(255, 0, 0, 0.0);
+    position: absolute;
+    z-index: 20;
+    width: 240px;
+    top: 34px;
+    left: 52px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    color: #666666;
+    text-align: center;
+    list-style-type: none;
+}
+#views img {
+    width: 40px;
+    height: 40px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 0.1s ease-in-out 0s;
+    -moz-transition: opacity 0.1s ease-in-out 0s;
+    -webkit-transition: opacity 0.1s ease-in-out 0s;
+}
+#views img:hover {
+    opacity: 1.0;
+}
+#views img.active {
+    opacity: 1.0;
+}
+
+#views h4 {
+    margin:  0 0 7px 0;
+    letter-spacing: -1px;
+    opacity: 0.6;
+}
+#views h4.active {
+    opacity: 1.0;
+}
+#views li {
+    position: relative;
+    float: left;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: inline;
+    cursor: pointer;
+}
+#views li:hover {
+    /*background: rgba(255, 255, 255, 1.0);*/
+    /*color: #000000;*/
+    text-decoration: none;   /*underline*/
+    opacity: 1.0;
+}
+#views li.active {
+    /*background: rgba(255, 255, 255, 1.0);*/
+    /*color: #000000;*/
+    text-decoration: none;   /*underline*/
+    opacity: 1.0;
+}
+
+#views #btn_contour {
+    margin-left: 3px;
+}
+#views #btn_landmark {
+     margin-left: 13px;
+}
+#views #btn_well {
+     margin-left: 23px;
+}
+#btn_contour.active, #btn_landmark.active, #btn_well.active {
+    /*background: rgba(255, 255, 255, 1.0);*/
+    /*color: #000000;*/
+    text-decoration: none;   /*underline*/
+    opacity: 1.0;
+}
+#btn_contour img, #btn_landmark img, #btn_well img {
+    transition: opacity 0.2s ease-in-out 0s;
+    -moz-transition: opacity 0.2s ease-in-out 0s;
+    -webkit-transition: opacity 0.2s ease-in-out 0s;
+}
+
+
+/* ////////REPORTS BTN////////*/
+#epa_report_2014, #epa_report_2009, #epa_report_2004, #epa_report_1999, #epa_report_1993 {
+    position: absolute;
+    z-index: 20;
+    width: 240px;
+    top: 0px;
+    left: 52px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    color: #666666;
+    text-align: center; 
+    list-style-type: none;
+}
+#epa_report_2014 {
+    top: 151px;
+}
+#epa_report_2009 {
+    top: 279px;
+}
+#epa_report_2004 {
+    top: 483px;
+}
+#epa_report_1999 {
+    top: 611px;
+}
+#epa_report_1993 {
+    top: 674px;
+}
+#epa_report_2014 li, #epa_report_2009 li, #epa_report_2004 li, #epa_report_1993 li {
+    /*background: rgba(255, 0, 0, 0.6);*/
+    width: 40px;
+    height: 40px;
+    position: relative;
+    float: left;
+    /*border: 1px solid #000000;*/
+    border-radius: 50%;  
+    /*box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */   
+    margin: 0px 20px 36px 19px;
+    padding: 0 0 0 0;
+    display: inline;    /*block;*/
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease-in-out 0s;
+    -moz-transition: opacity 0.3s ease-in-out 0s;
+    -webkit-transition: opacity 0.3s ease-in-out 0s;
+}
+#epa_report_2014 li:hover, #epa_report_2009 li:hover, #epa_report_2004 li:hover, #epa_report_1993 li:hover {
+    /*background: rgba(255, 0, 0, 1.0);*/
+    /*color: #000000;*/
+    text-decoration: none;   /*underline*/
+    opacity: 1.0;
+}
+#epa_report_2014 li.active, #epa_report_2009 li.active, #epa_report_2004 li.active, #epa_report_1993 li.active {
+    /*background: rgba(255, 0, 0, 1.0);*/
+    /*color: #000000;*/
+    text-decoration: none;   /*underline*/
+    opacity: 1.0;
+}
+#epa_report_2014 h3, #epa_report_2009 h3, #epa_report_2004 h3, #epa_report_1999 h3, #epa_report_1993 h3 {
+    margin: 0 0 31px 0;
+    opacity: 0.6;
+}
+#epa_report_2014 h4, #epa_report_2009 h4, #epa_report_2004 h4, #epa_report_1999 h4, #epa_report_1993 h4 {
+    margin: -22px 0 0 0;
+    opacity: 0.6;
+}
+#epa_report_2014 h4.active, #epa_report_2009 h4.active, #epa_report_2004 h4.active, #epa_report_1999 h4.active, #epa_report_1993 h4.active {
+    opacity: 1.0;
+    text-decoration: underline;
+}
+#btn_cc_2014_1 {
+    background: rgba(255, 19, 0, 1.0);
+}
+#btn_cc_2014_2 {
+    background: rgba(131, 10, 215, 1.0);
+}
+#btn_cc_2014_3 {
+    background: rgba(29, 98, 252, 1.0);
+}
+#btn_cc_2009_1 {
+    background: rgba(0, 170, 136, 1.0);
+}
+#btn_cc_2009_2 {
+    background: rgba(255, 45, 85, 1.0);
+}
+#btn_cc_2009_3 {
+    background: rgba(255, 149, 0, 1.0);
+}
+#btn_cc_2009_4 {
+    background: rgba(255, 204, 0, 1.0);
+}
+#btn_cc_2009_5 {
+    background: rgba(208, 148, 64, 1.0);
+}
+#btn_cc_2009_6 {
+    background: rgba(198, 68, 252, 1.0);
+}
+#btn_cc_2004_1 {
+    background: rgba(91, 86, 214, 1.0);
+}
+#btn_cc_1993_1 {
+    background: rgba(155, 40, 117, 1.0);
+}
+#btn_cc_1993_2 {
+    background: rgba(204, 32, 114, 1.0);
+}
+#btn_cc_1993_3 {
+    background: rgba(160, 40, 48, 1.0);
+}
+#btn_cc_1993_4 {
+    background: rgba(240, 96, 100, 1.0);
+}
+#btn_cc_1993_5 {
+    background: rgba(208, 94, 76, 1.0);
+}
+#btn_cc_1993_6 {
+    background: rgba(250, 12, 152, 1.0);
+}
+#btn_cc_2014_1:hover, #btn_cc_2014_2:hover, #btn_cc_2014_3:hover,
+#btn_cc_2009_1:hover, #btn_cc_2009_2:hover, #btn_cc_2009_3:hover,
+#btn_cc_2009_4:hover, #btn_cc_2009_5:hover, #btn_cc_2009_6:hover,
+#btn_cc_2004_1:hover,
+#btn_cc_1993_1:hover, #btn_cc_1993_2:hover, #btn_cc_1993_3:hover,
+#btn_cc_1993_4:hover, #btn_cc_1993_5:hover, #btn_cc_1993_6:hover
+{
+    opacity: 1.0;
+}
+#btn_cc_2014_1.active, #btn_cc_2014_2.active, #btn_cc_2014_3.active,
+#btn_cc_2009_1.active, #btn_cc_2009_2.active, #btn_cc_2009_3.active,
+#btn_cc_2009_4.active, #btn_cc_2009_5.active, #btn_cc_2009_6.active,
+#btn_cc_2004_1.active,
+#btn_cc_1993_1.active, #btn_cc_1993_2.active, #btn_cc_1993_3.active,
+#btn_cc_1993_4.active, #btn_cc_1993_5.active, #btn_cc_1993_6.active
+{
+    opacity: 1.0;
+}
+
+
+/* ////////CC INTRO////////*/
+#cc_1_name, #cc_2_name, #cc_3_name, #cc_4_name, #cc_5_name, #cc_6_name {
+  /*background: linear-gradient(#003040, #002535);*/
+  background: rgba(255, 255, 255, 0.5); 
+  width: 242px;
+  height: 26px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+#accordian {
+    background: rgba(255, 0, 0, 0.0);
+    width: 283px;
+    margin: 0 0 100px 0;
+    position: absolute;
+    bottom: 0px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 10px;
+    color: #000000;
+    /*
+    box-shadow: 
+        0 5px 15px 1px rgba(0, 0, 0, 0.6), 
+        0 0 200px 1px rgba(255, 255, 255, 0.5);
+    */
+}
+#accordian h1 {
+    color: #000000;
+    opacity: 0.8;
+    margin: 0 0 0 0;
+    padding: 6px 0 0 0;
+    text-align: center;
+}
+#accordian h1:hover {
+    /*text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);*/
+}
+#accordian h1.active {
+    /**/
+}
+#accordian li {
+    background: rgba(255, 255, 255, 0.8);
+    list-style-type: none;
+    border-bottom: 0.1px solid #dddddd; 
+}
+#accordian li li {
+    background: rgba(0, 255, 0, 0.0);
+    list-style-type: none;
+    border-bottom: 0.0px solid #dddddd;
+}
+#accordian li li h1 {
+    text-align: left;
+}
+#accordian li li span {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;    /* bold; */
+    font-style: normal;
+    font-variant: normal;   /* small-caps; */
+    text-transform: none;   /* uppercase; */ 
+    text-align: left;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: #000000;
+}
+#accordian ul ul {
+    background: rgba(200, 200, 200, 0.8);
+    width: 202px;
+    margin: 0 0 0 0;
+    padding: 10px 20px 10px 20px;
+    display: none;
+}
+#accordian li.active ul {
+    background: rgba(0, 0, 0, 0.5);
+    width: 202px;
+    margin: 0 0 0 0;
+    padding: 10px 10px 10px 10px;
+    display: block;
+}
+/*links*/
+#accordian ul ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 20px;
+    display: block;
+    padding: 0 0px;
+    /*transition for smooth hover animation*/
+    transition: all 0.15s;
+}
+/*hover effect on links*/
+#accordian ul ul li a:hover {
+    background: #003545;
+    /*border-left: 5px solid lightgreen;*/
+}
+
+
+/* /////////////////////////////// */
+/* ////////PANEL: TIMELINE//////// */
+/* /////////////////////////////// */
+#panel_timeline
+{
+    background: rgba(0, 0, 255, 0.0);
+    width: 164px;
+    height: 1080px;
+    position: absolute;
+    z-index: 20;
+    top: -164px;
+    right: 0px;  /*0px;*/
+    /*left: 1734px;*/
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+transform-origin: 0;
+-ms-transform-origin: 0;
+-moz-transform-origin: 0;
+-webkit-transform-origin: 0;
+transform: scale(0.7);
+ms-transform: scale(0.7);
+-moz-transform: scale(0.7);
+-webkit-transform: scale(0.7);
+}
+
+#bg_right {
+    background: rgba(255, 255, 255, 0.8);
+    width: 364px;  /*480px;*/
+    height: 100%;  /*1080px;*/
+    position: absolute;
+    z-index: 15;
+    top: 0px;
+    right: 0px;
+    /*left: 1440px;*/
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+#bg_right img {
+    width: 480px;
+    height: 1080px;
+    position: absolute;
+    z-index: 15;
+    top: -164px;
+    right: -109px;
+transform-origin: 0;
+-ms-transform-origin: 0;
+-moz-transform-origin: 0;
+-webkit-transform-origin: 0;
+transform: scale(0.7);
+ms-transform: scale(0.7);
+-moz-transform: scale(0.7);
+-webkit-transform: scale(0.7);
+}
+
+/* ////////TEXT////////*/
+#timeline_text 
+{
+    background: none;
+    position: absolute;
+    z-index: 20;
+    width: 186px;
+    height: 1080px;
+    margin: 0 0 0 0;
+    padding: 34px 0 0 0;  /*390px 10px 0 10px;*/
+}
+#timeline_text h4 {
+    margin: 0 16px 0 0;
+    letter-spacing: -1px;
+    opacity: 1.0;
+}
+#timeline_text_year {
+    position: absolute;
+    z-index: 20;
+    width: 60px;
+    top: 124px;
+    left: 0px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 24px;
+}
+#timeline_text_year h2 {
+    opacity: 1.0;
+}
+#timeline_text_description {
+    position: absolute;
+    z-index: 20;
+    width: 84px;
+    top: 302px;
+    left: 102px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+#timeline_text_description h1 {
+    opacity: 1.0;
+    line-height: 16px;
+    letter-spacing: -1px;
+    text-align: left;
+}
+
+#timeline_scrollBar {
+    position: absolute;
+    z-index: 40;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 1080px;
+    margin: 534px 0 0 -414px;  
+    padding: 0 0 0 0;
+}
+
+/* ////////SLIDER (CROSS-BROWSER COMPATIBILITY)////////*/
+/* #myRange { */
+input[type=range] {     
+    -webkit-appearance: none;  /* Hides the slider for customizing slider */
+    background: none;
+    width: 1000px;
+    height: 50px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    /* margin: 0 auto; */
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg); 
+    -moz-transform: rotate(270deg); 
+    -ms-transform: rotate(270deg); 
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    -webkit-appearance: none; 
+    /*
+    background: rgba(255, 0, 0, 0.5);
+    width: 980px;
+    height: 4px;
+    border: 0.2px solid #010101;   
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    */
+}
+input[type=range]::-moz-range-track {
+    background: rgba(255, 0, 0, 0.0);
+    width: 1000px;
+    height: 4px;
+    /*
+    border: 0.2px solid #010101;   
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    */
+}
+input[type=range]::-ms-track {
+    background: transparent ;
+    width: 1000px;
+    height: 4px;
+    border-color: transparent;
+    color: transparent;
+    padding: 0 0 0 0;
+    /*
+    border-width: 1px 0;
+    color: transparent;
+    */
+}
+input[type=range]::-ms-fill-lower {
+  background: rgba(200, 0, 0, 0.0);
+  border-color: transparent;
+  color: transparent;
+  /*
+  border: 0px solid #010101;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  */
+}
+input[type=range]::-ms-fill-upper {
+  background: rgba(155, 0, 0, 0.0);
+  border-color: transparent;
+  color: transparent;
+  /*
+  border: 0px solid #010101;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  */
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #000000;
+    width: 40px;
+    height: 40px;
+    border: 0px solid #000000;
+    border-radius: 50%;  
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;     
+    margin: -1px 2px 0 0; 
+    cursor: pointer;    
+}
+input[type=range]::-moz-range-thumb {
+    background: #000000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;  
+    border: 0px solid #000000;
+    /*box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;*/     
+    margin: -18px 2px 0 0; 
+    cursor: pointer;    
+}
+input[type=range]::-ms-thumb {
+  background: #000000;
+  height: 40px;
+  width: 40px;
+  border: 0px solid #000000;
+  border-radius: 50%;
+  /*box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  margin: 1px 2px 0 0; */
+  cursor: hand;
+  cursor: pointer;
+}
+input[type=range]::-ms-ticks {
+  border: none;
+}
+input[type=range]::-ms-tooltip {
+  display: none;
+}
+
+
+input[type=range]:focus {
+    outline: none;   /* Removes the blue border */
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    /*background: rgba(0, 255, 0, 0.5);*/
+}
+input[type=range]:focus::-webkit-slider-thumb {
+    /*background: #ff0000;*/
+}
+input[type=range]::-moz-focus-outer {
+    border: 0;
+    outline: 0px solid white;
+    outline-offset: 0px;
+}
+input[type=range]:focus::-moz-range-track {
+    outline: none; 
+    background: none;
+    /*background: rgba(0, 255, 0, 0.5);*/
+}
+input[type=range]:focus::-moz-range-thumb {
+    outline: none;
+    /*background: #ff0000;*/
+}
+input[type=range]:focus::-ms-fill-lower {
+    /*background: rgba(0, 200, 0, 0.5);*/
+}
+input[type=range]:focus::-ms-fill-upper {
+    /*background: rgba(0, 150, 0, 0.5);*/
+}
+input[type=range]:focus::-ms-thumb {
+    /*background: #ff0000;*/
+}
+
+
+/* ////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#controlPanel {
+    position: absolute;
+    width: 204px;
+    left: 820px;
+    top: 0px;
+    margin: 0px;
+    z-index: 1;
+ }
+ #views {
+    margin: 20px 0 0 2px;
+ }
+ #chemicals {
+    margin: 200px 0 0 0;
+ }
+ #timeline {
+    margin: 503px 0 0 400px;
+ }
+ #btn_view_contour, #btn_view_satellite, #btn_view_basic, #btn_view_wells{
+    width: 32px;
+    height: 32px;
+    display: block;
+    float:left;
+    margin: 0 9px;
+    z-index: 1;
+}
+#btn_tce, #btn_dcb, #btn_dce, #btn_nitrobenzene, #btn_aniline, #btn_plume {
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: left;
+    margin: 0 10px;
+    z-index: 1;
+}
+#btn_timeline_1966, #btn_timeline_1971, #btn_timeline_1978, #btn_timeline_2011 {
+    width: 13px;
+    height: 13px;
+    display: block;
+    float: left;
+    margin: 0 0 0 20px;
+}
+#img_contour, #img_satellite, #img_wells, #img_basic, #img_1991_ICE, #img_1991_DCB, #img_1991_DCE, #img_1991_nitrobenzene, #img_1991_aniline, #img_1991_plume, #img_2004_plume, #img_2011_TCE_green, #img_2011_TCE_red, #img_2011_TCE_yellow, #img_2011_TCE_brown, #img_2011_TCE_purple, #img_2011_TCE_isopleth, #img_timeline_1966, #img_timeline_1971, #img_timeline_1978, #img_timeline_2011 {
+    width: 820px;
+    height: 461px;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+}
+#abgne-block-20120327 {
+     width: 100%;
+     margin: 221px 0 0 3px;
+}
+#abgne-block-20120327 ul, #abgne-block-20120327 li {
+     list-style: none;
+     padding: 0 0 0 0;
+}
+#abgne-block-20120327 .tabs {
+     float: left;
+     margin: 6px 4px 0px 0px;
+}
+#abgne-block-20120327 .tabs li {
+     float: left;
+     margin: -10px 0 -1px 3px;
+     border: 1px solid #ddd;
+     background: #c8c8c8;
+     width: 33px;
+     height: 18px;
+     cursor: pointer;
+     border-radius: 0 0 0 0;
+}
+#abgne-block-20120327 .tabs li.active {
+     background: #ffffff;
+     padding-bottom: 1px;
+     border-bottom: none;
+}
+#abgne-block-20120327 .tabs li.hover{
+     background: #f5f5f5; 
+}
+#abgne-block-20120327 .tabs span {
+     display: block;
+     overflow: hidden;
+     padding: 3px 2px 2px 1px;
+     font-family:Helvetica, Arial, sans-serif;
+     font-style:italic;
+     font-size: 12px;
+     letter-spacing:1.2px;
+     text-align:center;
+     text-decoration:none;
+}
+#abgne-block-20120327 .tab_container {
+     clear: both;
+     border: 0px solid #c0c0c0;
+     background: none;
+     overflow: hidden;
+     border-radius: 0px;
+     margin: 0px 0px 0px 5px;
+}
+#abgne-block-20120327 .tab_container ul {
+     position: relative;
+     width: 182px;
+     height: 240px; 
+     overflow: hidden;
+}
+#abgne-block-20120327 .tab_container .tab_content li {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     padding: 0px;
+     margin: -20px 0px 0px 0px;
+     background: #ffffff;
+}
+*/
